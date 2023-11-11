@@ -20,20 +20,22 @@ html {
     font-weight: 100;
     color: #ffffff;
     position: absolute;
-    left: 10%;
-    top: 2%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
     font-size: 14vw;
     opacity: 0.8;
     text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.8);
     margin: 0;
+    white-space: nowrap; /* Ngăn ngừa xuống dòng */
   }
   body h2 {
     font-family: "Great Vibes", cursive;
     font-weight: 100;
     color: #ffffff;
-    position: absolute;
-    left: 45%;
-    top: 80%;
+    position: fixed; /* Sử dụng position: fixed để phần tử giữ vị trí nguyên vị trên màn hình */
+    right: 5%; /* Cách góc phải 5% */
+    bottom: 0; /* Cách góc dưới 5% */ /* Đặt right: 0 để đưa phần tử vào góc phải của trang web */
     font-size: 8vw;
     opacity: 0.8;
     text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.8);
@@ -42,15 +44,16 @@ html {
   body img {
     position: absolute;
     padding: 0;
-    top: 25%;
-    left: 35%;
-    margin: 50px auto 0;
+    top: 50%; /* Đưa phần tử về giữa chiều dọc */
+    left: 50%; /* Đưa phần tử về giữa chiều ngang */
+    transform: translate(-50%, -50%); /* Căn giữa phần tử */
+    margin: 0; /* Loại bỏ margin để đảm bảo độ chính xác của căn giữa */
   }
   body .container {
     position: absolute;
     padding: 0;
-    top: 20%;
-    left: 70%;
+    top: 130px;
+    left: 0px;
     min-width: 380px;
     height: 430px;
     margin: 50px auto 0;
@@ -253,8 +256,8 @@ html {
   body .container2 {
     position: absolute;
     padding: 0;
-    top: 20%;
-    left: 0%;
+    top: 130px;
+    right: 0px;
     min-width: 380px;
     height: 430px;
     margin: 50px auto 0;
